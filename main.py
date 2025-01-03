@@ -23,3 +23,11 @@ error = (1 - O1_output) ** 2 / 1
 
 print("result: ", O1_output)
 print("error: ", error)
+
+delta_O1 = (1 - O1_output) * ((1 - O1_output) * O1_output)
+delta_H1 = ((1 - H1_output) * H1_output) * (w5 * delta_O1)
+delta_H2 = ((1 - H2_output) * H2_output) * (w6 * delta_O1)
+
+GRAD_w5 = H1_output * delta_O1
+GRAD_w6 = H2_output * delta_O1
+
