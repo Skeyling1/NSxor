@@ -22,7 +22,7 @@ w1, w2, w3, w4, w5, w6 = [random.random() for w in range(6)]  #случайны�
 error = 1
 number_of_itterations = 0
 epoch_counter = 0
-epoch_limit = 100
+epoch_limit = 5
 
 while epoch_counter < epoch_limit:
     for training_set in training_sets:
